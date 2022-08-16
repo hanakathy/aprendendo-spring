@@ -8,5 +8,9 @@ import java.util.UUID;
 
 @Repository //Esteriótipo para transações com base de dados (Não obrigatório)
 public interface ParkingSpotRepository extends JpaRepository<ParkingSpotModel, UUID> {
-    //
+    public boolean existsByLicensePlateCar(String licensePlateCar);
+
+    public boolean existsByParkingSpotNumber(String parkingSpotNumber);
+
+    public boolean existsByApartmentAndBlock(String apartment, String block);
 }

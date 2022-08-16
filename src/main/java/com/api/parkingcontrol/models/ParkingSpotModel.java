@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity //indico ao sistema que essa classe é uma entidade
-@Table(name = "TB_PARKING-SPOT") //pra criar tabela no DB
+@Table(name = "TB_PARKING_SPOT") //pra criar tabela no DB
 public class ParkingSpotModel implements Serializable {
     private static final long serialVersionUID = 1L;
 
